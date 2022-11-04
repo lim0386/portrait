@@ -21,8 +21,8 @@ function preload(){
     faceapi = ml5.faceApi(video, detection_options, modelReady);
 }
 function setup() {
-	// createCanvas(windowWidth, windowHeight);
-	createCanvas(1065, 1920);
+	 createCanvas(windowWidth, windowHeight);
+	//createCanvas(1065, 1920);
 	// video = createCapture(VIDEO);
     // video.size(width, height);
     // video.hide(); // Hide the video element, and just show the canvas
