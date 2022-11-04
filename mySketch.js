@@ -21,7 +21,8 @@ function preload(){
     faceapi = ml5.faceApi(video, detection_options, modelReady);
 }
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	// createCanvas(windowWidth, windowHeight);
+	createCanvas(1065, 1920);
 	// video = createCapture(VIDEO);
     // video.size(width, height);
     // video.hide(); // Hide the video element, and just show the canvas
@@ -42,6 +43,15 @@ function setup() {
 	img.push(loadImage('face1.jpg'));
 	img.push(loadImage('face2.png'));
 	img.push(loadImage('face3.png'));
+	img.push(loadImage('face4.png'));
+	img.push(loadImage('face5.png'));
+	img.push(loadImage('face6.png'));
+	img.push(loadImage('face7.png'));
+	img.push(loadImage('face8.png'));
+	img.push(loadImage('face9.png'));
+	img.push(loadImage('face10.png'));
+	img.push(loadImage('face11.png'));
+	img.push(loadImage('face12.png'));
 	}
 	if(me === 1){	
 			photo = video;	
@@ -123,6 +133,8 @@ function initParticles() {
 }
 
 function mousePressed() {
+	let fs = fullscreen();
+    fullscreen(!fs); 
 	me = 0;
 	timer = 0;
 	indexImg = (indexImg + 1) % img.length;
