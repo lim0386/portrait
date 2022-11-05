@@ -146,15 +146,15 @@ function initParticles() {
 }
 
 function mouseClicked() {
-	let fs = fullscreen();
-    fullscreen(!fs); 
-}
-
-function mousedoubleClicked(){
 	me = 0;
 	timer = 0;
 	indexImg = (indexImg + 1) % img.length;
 	setup();
+}
+
+function mousedoubleClicked(){
+	let fs = fullscreen();
+    fullscreen(!fs); 
 }
 
 class Particle {
