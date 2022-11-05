@@ -152,7 +152,7 @@ function mouseClicked() {
 	setup();
 }
 
-function mousedoubleClicked(){
+function doubleClicked(){
 	let fs = fullscreen();
     fullscreen(!fs); 
 }
