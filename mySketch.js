@@ -15,6 +15,19 @@ const detection_options = {
     withDescriptors: false,
 }
 function preload(){
+	// img.push(loadImage('KakaoTalk_20221025_034445073.png'));
+	img.push(loadImage('face1.png'));
+	img.push(loadImage('face2.png'));
+	img.push(loadImage('face3.png'));
+	img.push(loadImage('face4.png'));
+	img.push(loadImage('face5.png'));
+	img.push(loadImage('face6.png'));
+	img.push(loadImage('face7.png'));
+	img.push(loadImage('face8.png'));
+	img.push(loadImage('face9.png'));
+	img.push(loadImage('face10.png'));
+	img.push(loadImage('face11.png'));
+	img.push(loadImage('face12.png'));
 	video = createCapture(VIDEO);
     video.size(width, height);
     video.hide(); // Hide the video element, and just show the canvas
@@ -39,19 +52,19 @@ function setup() {
 	
 	particles = [];
 	if(me === 0){
-	img.push(loadImage('KakaoTalk_20221025_034445073.png'));
-	img.push(loadImage('face1.jpg'));
-	img.push(loadImage('face2.png'));
-	img.push(loadImage('face3.png'));
-	img.push(loadImage('face4.png'));
-	img.push(loadImage('face5.png'));
-	img.push(loadImage('face6.png'));
-	img.push(loadImage('face7.png'));
-	img.push(loadImage('face8.png'));
-	img.push(loadImage('face9.png'));
-	img.push(loadImage('face10.png'));
-	img.push(loadImage('face11.png'));
-	img.push(loadImage('face12.png'));
+	// img.push(loadImage('KakaoTalk_20221025_034445073.png'));
+	// img.push(loadImage('face1.png'));
+	// img.push(loadImage('face2.png'));
+	// img.push(loadImage('face3.png'));
+	// img.push(loadImage('face4.png'));
+	// img.push(loadImage('face5.png'));
+	// img.push(loadImage('face6.png'));
+	// img.push(loadImage('face7.png'));
+	// img.push(loadImage('face8.png'));
+	// img.push(loadImage('face9.png'));
+	// img.push(loadImage('face10.png'));
+	// img.push(loadImage('face11.png'));
+	// img.push(loadImage('face12.png'));
 	}
 	if(me === 1){	
 			photo = video;	
