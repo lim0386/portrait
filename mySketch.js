@@ -117,7 +117,7 @@ function draw() {
 			initParticles();
 		}
 	}
-	if(timer > 1800){
+	if(timer > 2400){
 		me = 0;
 		indexImg = (indexImg + 1) % img.length;
 	setup();
