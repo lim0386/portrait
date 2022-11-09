@@ -113,7 +113,7 @@ function draw() {
 				if(p.isDead()) particles.splice(i, 1);
 			}
 		} else {
-			s -= 3; //붓의 작아지는 양 원래 2
+			s -= 2; //붓의 작아지는 양 원래 2
 			initParticles();
 		}
 	}
