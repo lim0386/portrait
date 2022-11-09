@@ -117,7 +117,7 @@ function draw() {
 			initParticles();
 		}
 	}
-	if(timer > 4800){
+	if(timer > 3800){
 		me = 0;
 		indexImg = (indexImg + 1) % img.length;
 	setup();
@@ -184,7 +184,7 @@ class Particle {
   }
   
   move() {
-    var angle = noise(this.pos.x / 200, this.pos.y / 200) * TAU; //원래 400 400
+    var angle = noise(this.pos.x / 100, this.pos.y / 100) * TAU; //원래 400 400
     
     this.vel.set(cos(angle), sin(angle));
     this.vel.mult(0.11); //원래 0.4
