@@ -96,7 +96,7 @@ function draw() {
 	translate(width / 2, height / 4);
 	noStroke();
 	if (me === 0) {
-		if (timer > 200) {
+		if (timer > 50) {
 			if (s > 1) {
 				if (particles.length != 0) {
 					for (let i = 0; i < particles.length; i++) {
@@ -123,7 +123,7 @@ function draw() {
 		timer++;
 	}
 	if (me === 1) {
-		if (timer > 200) {
+		if (timer > 50) {
 			if (s > 1) {
 				if (particles.length != 0) {
 					for (let i = 0; i < particles.length; i++) {
@@ -152,7 +152,7 @@ function draw() {
 }
 
 function initParticles() {
-	if (timer > 200) {
+	if (timer > 50) {
 		for (let i = 0; i < n; i++) {
 			particles.push(new Particle(maxR, s));
 
