@@ -107,11 +107,11 @@ function draw() {
 						if (p.isDead()) particles.splice(i, 1);
 					}
 				} else {
-					s -= 2; //붓의 작아지는 양 원래 2
+					s -= 5; //붓의 작아지는 양 원래 2
 					initParticles();
 				}
 			}
-			if (timer > 2400) {
+			if (timer > 1500) {
 				me = 0;
 				indexImg = (indexImg + 1) % img.length;
 				// background("#FFEDDA");
@@ -138,7 +138,7 @@ function draw() {
 					initParticles();
 				}
 			}
-			if (timer > 3600) {
+			if (timer > 2600) {
 				me = 0;
 				indexImg = (indexImg + 1) % img.length;
 				// background("#FFEDDA");
