@@ -68,6 +68,7 @@ function gotResults(err, result) {
 	}
 	detections = result;
 	image(video, -1 * width / 2, height / 4, width, height / 2);
+	rect(-1 * width / 2, height / 4, width, 100);
 	if (detections) {
 		console.log("Start");
 		if (detections.length > 0) {
