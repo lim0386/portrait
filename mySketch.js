@@ -82,7 +82,8 @@ function gotResults(err, result) {
 				// noFill();
 				// rect(x, y, boxWidth, boxHeight);
 				if (timer < 20) {
-					photo = get(x, y, boxWidth, boxHeight);
+					// photo = get(x-boxWidth/2, y-boxHeight, boxWidth*2, boxHeight*2);
+					photo = get(x-boxWidth/2, y-boxHeight, boxWidth*2, boxHeight*2);
 					me = 1;
 				}
 			}
