@@ -37,7 +37,7 @@ function preload() {
 function setup() {
 	createCanvas(windowWidth, windowHeight * 2);
 	document.documentElement.style.overflowX = "hidden";
-	// document.documentElement.style.overflowY = "hidden";
+	document.documentElement.style.overflowY = "hidden";
 	//createCanvas(1065, 1920);
 	video = createCapture(VIDEO);
 	video.size(width, height);
