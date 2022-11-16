@@ -72,20 +72,23 @@ function gotResults(err, result) {
 	if (detections) {
 		console.log("Start");
 		if (detections.length > 0) {
-			for (let i = 0; i < detections.length; i++) {
-				const alignedRect = detections[i].alignedRect;
-				const x = alignedRect._box._x;
-				const y = alignedRect._box._y + height / 3;
-				const boxWidth = alignedRect._box._width;
-				const boxHeight = alignedRect._box._height / 2;
+			photo = video;
+			me = 1;
+			// for (let i = 0; i < detections.length; i++) {
+			// 	const alignedRect = detections[i].alignedRect;
+			// 	const x = alignedRect._box._x;
+			// 	const y = alignedRect._box._y + height / 3;
+			// 	const boxWidth = alignedRect._box._width;
+			// 	const boxHeight = alignedRect._box._height / 2;
 
-				// noFill();
-				// rect(x, y, boxWidth, boxHeight);
-				if (timer < 20) {
-					photo = get(x, y, boxWidth, boxHeight);
-					me = 1;
-				}
-			}
+			// 	// noFill();
+			// 	// rect(x, y, boxWidth, boxHeight);
+			// 	if (timer < 20) {
+			// 		// photo = get(x-boxWidth/2, y-boxHeight, boxWidth*2, boxHeight*2);
+			// 		photo = get(x-boxWidth, y-boxHeight, boxWidth, boxHeight);
+			// 		me = 1;
+			// 	}
+			// }
 		}
 	}
 	faceapi.detect(gotResults);
