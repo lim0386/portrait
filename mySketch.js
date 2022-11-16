@@ -35,7 +35,7 @@ function preload() {
 	// faceapi = ml5.faceApi(video, detection_options, modelReady);
 }
 function setup() {
-	createCanvas(windowWidth, windowHeight * 2);
+	createCanvas(displayWidth, displayHeight * 2);
 	document.documentElement.style.overflowX = "hidden";
 	document.documentElement.style.overflowY = "hidden";
 	//createCanvas(1065, 1920);
